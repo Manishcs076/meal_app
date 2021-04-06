@@ -49,4 +49,14 @@ const Dummy_CATEGORIES = const [
     title: 'Summer',
     color: Colors.lime,
   ),
+  Category(
+    id: 'c11',
+    title: 'Punjabi Tadka',
+    color: Colors.black,
+  ),
+  Category(
+    id: 'c12',
+    title: 'Rajasthani',
+    color: Colors.grey,
+  ),
 ];
