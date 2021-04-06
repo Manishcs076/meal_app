@@ -52,7 +52,7 @@ const Dummy_CATEGORIES = const [
   Category(
     id: 'c11',
     title: 'Punjabi Tadka',
-    color: Colors.black,
+    color: Colors.lightBlue,
   ),
   Category(
     id: 'c12',
