@@ -9,14 +9,24 @@ class MealDetailScreen extends StatelessWidget {
     final selectedMeal = DUMMY_MEALS.firstWhere((meal) => meal.id == mealId);
     return Scaffold(
       appBar: AppBar(
-        title: Text('$mealId'),
+        title: Text('${selectedMeal.title}'),
       ),
       body: Column(
         children: [
           Container(
             height: 300,
             width: double.infinity,
-            child: Image.network(selectedMeal.imageUrl,fit: BoxFit.cover,),
+            child: Image.network(
+              selectedMeal.imageUrl,
+              fit: BoxFit.cover,
+            ),
+          ),
+          Container(
+            margin: EdgeInsets.symmetric(vertical: 10,),
+            child: Text(
+              'Ingerdients',
+              style: Theme.of(context).textTheme.headline6,
+            ),
           ),
         ],
       ),
