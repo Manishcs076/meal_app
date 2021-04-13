@@ -41,8 +41,8 @@ class _MyAppState extends State<MyApp> {
           return false;
         }
         return true;
-      }).toList();
-    });
+      },).toList();
+    },);
   }
 
   @override
